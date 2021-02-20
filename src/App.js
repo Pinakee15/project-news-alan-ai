@@ -56,7 +56,7 @@ const App = () => {
       {!newsArticles.length ? (
         <div className={classes.footer}>
           <Typography variant="body1" component="h2">
-            Created by  <a style={{ display: "table-cell", textDecoration: 'none', color: 'whitesmoke', display: 'inline' }} href="https://sportify-pinakee.netlify.app/contact" target="_blank">Pinakee Kaushik</a>
+            Created by  <a style={{ display: "table-cell", textDecoration: 'none', color: 'orange', display: 'inline' }} href="https://sportify-pinakee.netlify.app/contact" target="_blank">Pinakee Kaushik</a>
           </Typography>
         </div>
       ) : null}
