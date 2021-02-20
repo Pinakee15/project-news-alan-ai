@@ -34,7 +34,7 @@ export default makeStyles((theme) => ({
     backgroundColor: 'rgba(21, 101, 192)',
     margin: '0 12px',
     textAlign: 'center',
-    height: '50vmin',
+    height: '32vmin',
     [theme.breakpoints.down('sm')]: {
       flexDirection: 'column-reverse',
       textAlign: 'center',
