@@ -2,8 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { Typography } from '@material-ui/core';
 import wordsToNumbers from 'words-to-numbers';
 import alanBtn from '@alan-ai/alan-sdk-web';
-
-import logo from './images/logo.png';
 import { NewsCards, Modal } from './components';
 import useStyles from './styles';
 
@@ -51,18 +49,15 @@ const App = () => {
             <div className={classes.card}><Typography variant="h5" component="h2">Try saying: <br /><br />Go back</Typography></div>
           </div>
         ) : null}
-        <img src="https://alan.app/voice/images/previews/preview.jpg" className={classes.alanLogo} alt="logo" />
+        <img src="https://images.squarespace-cdn.com/content/v1/58764c441e5b6cf25288e201/1556760027273-QM8KIQEHT74034LX5I85/ke17ZwdGBToddI8pDm48kIUEZvCntvRuFrrU4Evvy0AUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8GRo6ASst2s6pLvNAu_PZdJo7p2UBMf0acwEEEI6kjX1UVIQ5H6RSYRCZnOUY-i9S7NDohP5ZQZYwmi-jCp-7J0/Newsfeed+Logo.png?format=2500w" className={classes.alanLogo} alt="logo" />
       </div>
       <NewsCards articles={newsArticles} activeArticle={activeArticle} />
       <Modal isOpen={isOpen} setIsOpen={setIsOpen} />
       {!newsArticles.length ? (
         <div className={classes.footer}>
           <Typography variant="body1" component="h2">
-            Created by
-            <a className={classes.link} href="https://www.linkedin.com/in/adrian-hajdin/"> Adrian Hajdin</a> -
-            <a className={classes.link} href="http://youtube.com/javascriptmastery"> JavaScript Mastery</a>
+            Created by Pinakee Kaushik
           </Typography>
-          <img className={classes.image} src={logo} height="50px" alt="JSMastery logo" />
         </div>
       ) : null}
     </div>
